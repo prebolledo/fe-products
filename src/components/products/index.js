@@ -27,6 +27,7 @@ const formarMoney = (money,minimumFractionDigits) =>{
 export default function Products() {
     const productsContext = useContext(ProductsContext);
     const products = productsContext.state.products;
+    const loading = productsContext.state.loading;
 
     return (
         <section>
@@ -34,6 +35,11 @@ export default function Products() {
                 Resultados para: <strong>{productsContext.state.textSearch}</strong>
             </div>
             <Container fluid className="products-container justify-content-center">
+                {loading &&
+                    <Col>
+                        Cargando Productos....
+                    </Col>
+                }
                 {products.map((product,index) => {
                     return (<>
                         <Col>
