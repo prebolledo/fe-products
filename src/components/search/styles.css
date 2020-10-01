@@ -1,0 +1,24 @@
+.search-container{
+    background: #fff;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.search-input{
+    margin-left: 10px;
+    border:none;
+    color:#333;
+    outline: none ;
+    font-weight: 400    ;
+}
+
+.search-input:focus{
+    box-shadow:none;
+}
+
+.search-icon{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}

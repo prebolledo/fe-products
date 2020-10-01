@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color:rgb(5,113,205);
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.logo{
+  width: 150px;
+  top: 1rem;
+  left: .5rem;
+}
+
+.juntosnoscuidamos{
+  display: block;
+    text-decoration: none;
+    padding: 1rem 0;
+    float: right;
+    color: #fff;
+    font-weight: 700;
+    font-size: .9rem;
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+}
+
+.juntosnoscuidamos:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.juntosnoscuidamos span {
+  background-image: url(https://images.lider.cl/wmtcl?source=url%5Bfile:/contin/prehome_v3/icono_locales_2.png%5D&sink=format%5Bpng%5D);
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin-right: 3px;
+  background-size: contain;
+}
