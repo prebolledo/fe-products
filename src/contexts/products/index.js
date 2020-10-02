@@ -10,16 +10,22 @@ export function ProductsProvider({ children }) {
     const [textSearch, settextSearch] = useState('');
 
     const search = (text) =>{
-        setLoding(true);
-        settextSearch(text);
-        setProducts([]);
-        ProductsService.search(text).suscribe(
-            products => {
-                setLoding(false);
-                setProducts(products);
-            },
-            error => console.log(error)
-        );
+        try{
+            if(text.length > 0){
+                setLoding(true);
+                settextSearch(text);
+                setProducts([]);
+                ProductsService.search(text).suscribe(
+                    products => {
+                        setLoding(false);
+                        setProducts(products);
+                    },
+                    error => console.log(error)
+                );
+            }
+        }catch(e){
+            console.log(e);
+        }
     };
 
     const state = {
