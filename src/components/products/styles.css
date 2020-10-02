@@ -73,3 +73,7 @@
     padding: 5px 10px;
     border-radius: 20px;    
 }
+
+.previous-price{
+    text-decoration: line-through;
+}

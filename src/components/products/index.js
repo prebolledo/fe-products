@@ -61,7 +61,7 @@ export default function Products() {
                                         </div>
                                         {product.percentage_discount > 0 &&
                                             <div>
-                                                <span class="previous_price">$ {formarMoney(product.previous_price)}</span>
+                                                <span class="previous-price">$ {formarMoney(product.previous_price)}</span>
                                             </div>
                                         }
                                     </CardText>
